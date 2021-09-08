@@ -20,6 +20,8 @@ class ViewController: UIViewController, UICollectionViewDataSource,
         super.viewDidLoad()
         imagesCollectionView.dataSource = self
         imagesCollectionView.delegate = self
+        
+        imagesCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReusableCell")
     }
     
     
